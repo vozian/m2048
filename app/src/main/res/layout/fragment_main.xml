@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/hello_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:textSize="24sp"
+        android:text="Hello nevermind!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13999999" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="152dp"
+        android:layout_height="152dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/orange" />
+
+    <Button
+        android:id="@+id/button_single"
+        style="@style/ClassicButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
+        android:text="@string/single_player"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.254" />
+
+    <Button
+        style="@style/ClassicButton"
+        android:id="@+id/button_multi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/multi_player"
+        app:layout_constraintEnd_toEndOf="@+id/button_single"
+        app:layout_constraintStart_toStartOf="@+id/button_single"
+        app:layout_constraintTop_toBottomOf="@+id/button_single" />
+
+    <Button
+        android:id="@+id/button_statistics"
+        style="@style/ClassicButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/statistics"
+        app:layout_constraintEnd_toEndOf="@+id/button_multi"
+        app:layout_constraintStart_toStartOf="@+id/button_multi"
+        app:layout_constraintTop_toBottomOf="@+id/button_multi" />
+
+    <Button
+        style="@style/ClassicButton"
+        android:id="@+id/button_settings"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/settings"
+        app:layout_constraintEnd_toEndOf="@+id/button_statistics"
+        app:layout_constraintStart_toStartOf="@+id/button_statistics"
+        app:layout_constraintTop_toBottomOf="@+id/button_statistics" />
+</androidx.constraintlayout.widget.ConstraintLayout>
